@@ -2,9 +2,9 @@ package com.sabbir.boot.learnspringbootrestws.game;
 
 public class GameRunner {
 
-	private MarioGame game;
+	private GameConsole game;
 
-	public GameRunner(MarioGame game) {
+	public GameRunner(GameConsole game) {
 		this.game = game;
 	}
 

@@ -1,6 +1,6 @@
 package com.sabbir.boot.learnspringbootrestws.game;
 
-public class MarioGame {
+public class MarioGame implements GameConsole {
 
 	public void up() {
 		System.out.println("jump");
