@@ -4,6 +4,7 @@ import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.context.ConfigurableApplicationContext;
 
+import com.sabbir.boot.learnspringbootrestws.controller.MyController;
 import com.sabbir.boot.learnspringbootrestws.game.GameRunner;
 
 @SpringBootApplication
@@ -19,6 +20,9 @@ public class LearnSpringBootRestWsApplication {
 		 */
 		GameRunner runner = context.getBean(GameRunner.class);
 		runner.run();
+
+		MyController controller = context.getBean(MyController.class);
+		System.out.println(controller.returnValue());
 
 	}
 
