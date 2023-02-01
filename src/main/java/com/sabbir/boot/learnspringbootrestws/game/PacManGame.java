@@ -1,5 +1,8 @@
 package com.sabbir.boot.learnspringbootrestws.game;
 
+import org.springframework.stereotype.Component;
+
+@Component
 public class PacManGame implements GameConsole {
 
 	public void up() {
